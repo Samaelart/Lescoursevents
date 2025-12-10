@@ -1,19 +1,75 @@
-<header>
-  <h1>La Guilde des Héros</h1>
-  <nav>
-    <ul>
-      <li><a href="#">Accueil</a></li>
-      <li><a href="#">Membres</a></li>
-      <li><a href="#">Raids</a></li>
-      <li><a href="#">Forum</a></li>
-    </ul>
-  </nav>
-</header>
-<main>
-  <section>
-    <h2>Dernières nouvelles</h2>
-      <article>
-        <h3><WOW></h3>
-      </article>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Accueil - Guilde WoW</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="navbar">
+      <div class="logo">Guilde des Héros</div>
+      <ul class="menu">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="presentation.html">Présentation</a></li>
+        <li><a href="donjons.html">Donjons</a></li>
+        <li><a href="raids.html">Raids</a></li>
+        <li><a href="membres.html">Membres</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- HERO BANNER -->
+  <section class="hero-banner">
+    <img src="images/banner-wow.jpg" alt="Bannière Guilde WoW" class="banner-image">
+    <h2 class="banner-title">Bienvenue dans la Guilde des Héros</h2>
+    <p class="slogan">"Pour l’Alliance… ou pour la Horde, mais toujours ensemble !"</p>
   </section>
-</main>
+
+  <main>
+    <!-- PRESENTATION -->
+    <section class="presentation">
+      <img src="images/embleme.png" alt="Emblème de la guilde" class="avatar">
+      <h3>Présentation de la Guilde</h3>
+      <p>Notre guilde regroupe des aventuriers passionnés de World of Warcraft. 
+         Nous explorons Azeroth, affrontons les donjons et relevons les défis des raids épiques. 
+         L’esprit d’équipe et la camaraderie sont nos valeurs fondamentales.</p>
+    </section>
+
+    <!-- DONJONS -->
+    <section class="donjons">
+      <h3>Nos Donjons</h3>
+      <p>Chaque semaine, nous organisons des sessions dans les donjons mythiques. 
+         Défis, stratégies et loot légendaires nous attendent.</p>
+      <a href="donjons.html" class="btn">Voir les donjons</a>
+    </section>
+
+    <!-- RAIDS -->
+    <section class="raids">
+      <h3>Nos Raids</h3>
+      <p>Les raids sont au cœur de notre aventure. 
+         Nous affrontons les boss les plus redoutables pour décrocher la gloire et les trésors.</p>
+      <a href="raids.html" class="btn">Découvrir nos raids</a>
+    </section>
+
+    <!-- MEMBRES -->
+    <section class="membres">
+      <h3>Les Membres</h3>
+      <div class="galerie">
+        <img src="images/membre1.jpg" alt="Membre 1">
+        <img src="images/membre2.jpg" alt="Membre 2">
+        <img src="images/membre3.jpg" alt="Membre 3">
+      </div>
+      <a href="membres.html" class="btn">Voir tous les membres</a>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Guilde des Héros - Tous droits réservés</p>
+  </footer>
+</body>
+</html>
