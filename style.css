@@ -1,0 +1,35 @@
+/*
+Theme Name: Guilde WoW Moderne
+Theme URI: http://exemple.com
+Author: Simon
+Description: Thème inspiré de World of Warcraft, moderne et responsive
+Version: 1.0
+*/
+
+body {
+  background: url('images/fond-wow.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Cinzel', serif;
+  color: #f5f5dc;
+  margin: 0;
+}
+
+header {
+  background-color: rgba(0,0,0,0.7);
+  padding: 20px;
+  text-align: center;
+  border-bottom: 3px solid #a67c00;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #ffd700;
+  text-decoration: none;
+  font-weight: bold;
+}
