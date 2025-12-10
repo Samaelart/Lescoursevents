@@ -1,115 +1,187 @@
 /*
-Theme Name: WoW Moderne
-Theme URI: http://exemple.com
+Theme Name: Guilde des Héros
 Author: Simon
-Description: Thème moderne inspiré de World of Warcraft
+Description: Thème moderne World of Warcraft
 Version: 1.0
 */
 
-/* Reset de base */
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Corps */
+/* BODY */
 body {
-  font-family: 'Cinzel', serif;
+  font-family: 'Roboto', sans-serif;
   background: linear-gradient(180deg, #0a0a0a 0%, #1a1a1a 100%);
   color: #f5f5dc;
   line-height: 1.6;
 }
 
-/* Header */
+/* HEADER */
 header {
-  background: url('images/banner-wow.jpg') center/cover no-repeat;
-  padding: 40px 20px;
-  text-align: center;
+  background-color: #1c1c1c;
   border-bottom: 4px solid #a67c00;
 }
 
-header h1 {
-  font-size: 3rem;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.logo {
+  font-family: 'Cinzel', serif;
+  font-size: 2rem;
   color: #ffd700;
   text-shadow: 2px 2px 8px #000;
 }
 
-/* Navigation */
-nav ul {
+.menu {
   list-style: none;
   display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 20px;
+  gap: 25px;
 }
 
-nav ul li a {
-  color: #ffd700;
+.menu li a {
+  color: #f5f5dc;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
+.menu li a:hover {
   color: #ff4500;
 }
 
-/* Sections */
-section {
-  padding: 40px 20px;
-  background-color: rgba(0,0,0,0.6);
-  margin: 20px auto;
-  max-width: 1200px;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(166,124,0,0.7);
+/* HERO BANNER */
+.hero-banner {
+  position: relative;
+  text-align: center;
+  color: #fff;
 }
 
-section h2 {
+.banner-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  filter: brightness(70%);
+}
+
+.banner-title {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Cinzel', serif;
+  font-size: 3rem;
+  color: #ffd700;
+  text-shadow: 3px 3px 10px #000;
+}
+
+.slogan {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #f5f5dc;
+}
+
+/* SECTIONS */
+section {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 30px;
+  background: rgba(28,28,28,0.85);
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(166,124,0,0.6);
+}
+
+section h3 {
+  font-family: 'Cinzel', serif;
   font-size: 2rem;
   margin-bottom: 20px;
-  color: #ffdf00;
+  color: #ffd700;
   border-bottom: 2px solid #a67c00;
   display: inline-block;
 }
 
-/* Articles */
-article {
-  margin-bottom: 30px;
+/* AVATAR / EMBLEME */
+.avatar {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 3px solid #ffd700;
 }
 
-article h3 {
-  font-size: 1.5rem;
-  color: #ff4500;
-  margin-bottom: 10px;
+/* GALERIE MEMBRES */
+.galerie {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-article p {
-  font-size: 1rem;
-  color: #f5f5dc;
+.galerie img {
+  width: 200px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
 }
 
-/* Footer */
+.galerie img:hover {
+  transform: scale(1.05);
+}
+
+/* BOUTONS */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #ff4500;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #ffd700;
+  color: #000;
+}
+
+/* FOOTER */
 footer {
-  background-color: rgba(0,0,0,0.8);
+  background-color: #1c1c1c;
   text-align: center;
   padding: 20px;
   border-top: 3px solid #a67c00;
   color: #ccc;
 }
 
-/* Responsive */
+/* RESPONSIVE */
 @media (max-width: 768px) {
-  nav ul {
+  .navbar {
     flex-direction: column;
     gap: 15px;
   }
 
-  header h1 {
+  .menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .banner-title {
     font-size: 2rem;
   }
 
-  section {
-    padding: 20px;
+  .galerie img {
+    width: 100%;
+    max-width: 300px;
   }
 }
