@@ -1,35 +1,115 @@
 /*
-Theme Name: Guilde WoW Moderne
+Theme Name: WoW Moderne
 Theme URI: http://exemple.com
 Author: Simon
-Description: Thème inspiré de World of Warcraft, moderne et responsive
+Description: Thème moderne inspiré de World of Warcraft
 Version: 1.0
 */
 
-body {
-  background: url('images/fond-wow.jpg') no-repeat center center fixed;
-  background-size: cover;
-  font-family: 'Cinzel', serif;
-  color: #f5f5dc;
+/* Reset de base */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* Corps */
+body {
+  font-family: 'Cinzel', serif;
+  background: linear-gradient(180deg, #0a0a0a 0%, #1a1a1a 100%);
+  color: #f5f5dc;
+  line-height: 1.6;
+}
+
+/* Header */
 header {
-  background-color: rgba(0,0,0,0.7);
-  padding: 20px;
+  background: url('images/banner-wow.jpg') center/cover no-repeat;
+  padding: 40px 20px;
   text-align: center;
-  border-bottom: 3px solid #a67c00;
+  border-bottom: 4px solid #a67c00;
 }
 
+header h1 {
+  font-size: 3rem;
+  color: #ffd700;
+  text-shadow: 2px 2px 8px #000;
+}
+
+/* Navigation */
 nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
+  margin-top: 20px;
 }
 
 nav ul li a {
   color: #ffd700;
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ff4500;
+}
+
+/* Sections */
+section {
+  padding: 40px 20px;
+  background-color: rgba(0,0,0,0.6);
+  margin: 20px auto;
+  max-width: 1200px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(166,124,0,0.7);
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ffdf00;
+  border-bottom: 2px solid #a67c00;
+  display: inline-block;
+}
+
+/* Articles */
+article {
+  margin-bottom: 30px;
+}
+
+article h3 {
+  font-size: 1.5rem;
+  color: #ff4500;
+  margin-bottom: 10px;
+}
+
+article p {
+  font-size: 1rem;
+  color: #f5f5dc;
+}
+
+/* Footer */
+footer {
+  background-color: rgba(0,0,0,0.8);
+  text-align: center;
+  padding: 20px;
+  border-top: 3px solid #a67c00;
+  color: #ccc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  section {
+    padding: 20px;
+  }
 }
